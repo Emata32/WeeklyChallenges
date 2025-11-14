@@ -74,7 +74,8 @@ namespace ChallengesWithTestsMark8
             {
                 return 0;
             }
-            return numbers.Where(number => number % 2 == 0).Sum();
+
+            return numbers.Sum();
         }
 
 
