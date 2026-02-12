@@ -67,10 +67,10 @@ namespace ChallengesWithTestsMark8
 
         public int Factorial(int number)
         {
-           /* var factorial = 1;
+            var factorial = 1;
             if (number < 0)
             {
-                throw new ArgumentException();
+                throw new  ArgumentOutOfRangeException("number");
             }
 
             for(int i = number; i > 0; i--) 
@@ -78,11 +78,14 @@ namespace ChallengesWithTestsMark8
                     factorial *= i;
             }
             
-            return factorial;*/
+            return factorial;
           
+           
+           
            // using factorial recursion 
-           if (number == 0) return 1;
-           return number * Factorial(number - 1);
+
+          // if (number == 0) return 1;
+          // return number * Factorial(number - 1);
         }
         
     }
